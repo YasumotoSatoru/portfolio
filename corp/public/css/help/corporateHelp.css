@@ -1,0 +1,128 @@
+/* ヘルプ画面 */
+.corporateHelp_title {
+    margin: 30px 30px 15px;
+  }
+  
+  .helpContents {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 60px 30px;
+    border: 1px solid #333;
+  }
+  
+  .corporateHelp_main {
+    list-style: square;
+    margin-top: 20px;
+  }
+  
+  .corporateHelp_sub {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .helpContents_btn {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .helpContents_btn p {
+    margin-bottom: 10px;
+  }
+  
+  /* 検索 */
+  .helpSearch {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .helpSearch_input {
+    background-color: #fff;
+    text-align: center;
+    width: 500px;
+    height: 40px;
+    border: 1px solid #333;
+    border-radius: 10px;
+  }
+  
+  .helpSubmit {
+    background-color: #ceced7;
+    padding: 5px 15px;
+    border-radius: 10px;
+  }
+  
+  /* accordion */
+  .gutter {
+    padding: 20px 100px;
+  }
+  .accordion_area .accordion_one .ac_header {
+    padding: 1.5rem 4rem 1.5rem 2rem;
+    position: relative;
+    z-index: +1;
+    cursor: pointer;
+    transition: .2s;
+  }
+  .accordion_area .accordion_one .ac_header:not(.open):hover {
+    background-color: #f1f8ff;
+  }
+  .accordion_area .accordion_one:nth-child(odd) .ac_header:not(.open):hover {
+    background-color: #f1f8ff;
+  }
+  .accordion_area .accordion_one .ac_header .i_box {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+  }
+  .accordion_area .accordion_one .ac_header .i_box:before, .accordion_area .accordion_one .ac_header .i_box:after {
+    position: absolute;
+    content: "";
+    margin: auto;
+    box-sizing: border-box;
+    vertical-align: middle;
+  }
+  .accordion_area .accordion_one .ac_header .i_box:before {
+    /* border-top: 2px solid #C70230; */
+    width: 20px;
+    height: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .accordion_area .accordion_one .ac_header .i_box:after {
+    /* border-left: 2px solid #C70230; */
+    width: 0;
+    height: 20px;
+    top: 0;
+    bottom: 0;
+    right: 9px;
+    transition: .3s;
+  }
+  .accordion_area .accordion_one .ac_header.open .i_box:after {
+    height: 0;
+  }
+  .accordion_area .accordion_one .ac_inner {
+    display: none;
+    padding: 0 2rem;
+    box-sizing: border-box;
+  }
+  
+  .ac_header {
+    position: relative;
+  }
+  
+  .ac_header .p-faq__headinner p span img {
+    width: 25px;
+    position: absolute;
+    left: 3px;
+  }
+  
+  .p-faq__a-txt {
+    margin-bottom: 1rem;
+  }
+  
+  .answer {
+    padding: 10px 20px;
+    background-color: aliceblue;
+  }
